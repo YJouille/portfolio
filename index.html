@@ -76,7 +76,8 @@
                   <div class="row">
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
-                        <img src="assets/img/photo-id.png" class="img-fluid rounded b-shadow-a" alt="photo portrait Yamina Jouille">
+                        <img src="assets/img/photo-id.png" class="img-fluid rounded b-shadow-a"
+                          alt="photo portrait Yamina Jouille">
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-7">
@@ -88,7 +89,7 @@
                       </div>
                     </div>
                   </div>
-                 
+
                 </div>
                 <div class="col-md-6">
                   <div class="about-me pt-4 pt-md-0">
@@ -99,9 +100,10 @@
                     </div>
                     <p class="lead">
                       De formation initiale en informatique, je souhaite orienter mon parcours professionnel vers le
-                      développement web. Je recherche un stage en développement Front-end et/ou Back-end du 10/01/2022 au 04/03/2022
+                      développement web. Je recherche un stage en développement Front-end et/ou Back-end du 10/01/2022
+                      au 04/03/2022
                     </p>
-                  
+
                   </div>
                 </div>
               </div>
@@ -199,7 +201,7 @@
       </div>
     </section><!-- End Services Section -->
 
-    
+
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
       <div class="container">
@@ -217,8 +219,8 @@
           </div>
         </div>
 
-        <div w3-include-html="portfolio-details.html"></div> 
-        
+        <div w3-include-html="portfolio-details.html"></div>
+
         <div class="row wrapper">
           <div class="col-md-4">
             <div class="work-box">
@@ -251,15 +253,29 @@
                             if (file) {
                               /*make an HTTP request using the attribute value as the file name:*/
                               xhttp = new XMLHttpRequest();
-                              xhttp.onreadystatechange = function() {
+                              xhttp.onreadystatechange = function () {
                                 if (this.readyState == 4) {
-                                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                                  if (this.status == 200) {
+                                    elmnt.innerHTML = '<div id="closeDiv">fermer</div>' + this.responseText;
+                                    let closer = document.getElementById('closeDiv')
+                                    closer.addEventListener("click", function () {
+                                      document.getElementById('mainprojet').style.display = "none"
+                                      document.getElementById('closeDiv').style.display = "none"
+
+                                    });
+                                    document.getElementById('lien').addEventListener("click", function () {
+                                      document.getElementById('mainprojet').style.display = "block"
+                                      document.getElementById('closeDiv').style.display = "block"
+                                    });
+                                  }
+                                  if (this.status == 404) {
+                                    elmnt.innerHTML = "Page not found.";
+                                  }
                                   /*remove the attribute, and call this function once more:*/
                                   elmnt.removeAttribute("w3-include-html");
                                   includeHTML();
                                 }
-                              }      
+                              }
                               xhttp.open("GET", file, true);
                               xhttp.send();
                               /*exit the function:*/
@@ -267,17 +283,14 @@
                             }
                           }
                         };
-                        </script>
+                      </script>
 
-                      <a id="lien" href="#"> <span class="bi bi-plus-circle"></span></a>
+                      <a id="lien" href="#work"> <span class="bi bi-plus-circle"></span></a>
                       <script>
-                        document.getElementById('lien').addEventListener('click' , function(){
+                        document.getElementById('lien').addEventListener('click', function () {
                           includeHTML();
                         });
-                        
-                        </script>
-
-                        
+                      </script>
                     </div>
                   </div>
                 </div>
@@ -408,9 +421,10 @@
         </div>
       </div>
     </section><!-- End Portfolio Section -->
-      
+
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+      style="background-image: url(assets/img/overlay-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container">
         <div class="row">
@@ -429,22 +443,26 @@
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Nom Prénom" required>
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Nom Prénom"
+                                required>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Adresse mail" required>
+                              <input type="email" class="form-control" name="email" id="email"
+                                placeholder="Adresse mail" required>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet"
+                                required>
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                required></textarea>
                             </div>
                           </div>
                           <div class="col-md-12 text-center my-3">
@@ -453,7 +471,8 @@
                             <div class="sent-message">Votre message a été envoyé. Merci!</div>
                           </div>
                           <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Envoyer message</button>
+                            <button type="submit" class="button button-a button-big button-rouded">Envoyer
+                              message</button>
                           </div>
                         </div>
                       </form>
@@ -467,7 +486,8 @@
                     </div>
                     <div class="more-info">
                       <p class="lead">
-                       Je suis mobile sur les départements du Jura et du Doubs. J'accèpte toute proposition en présentiel ou en télétravail.
+                        Je suis mobile sur les départements du Jura et du Doubs. J'accèpte toute proposition en
+                        présentiel ou en télétravail.
                       </p>
                       <div class="title-box-2 pt-4 pt-md-0">
                         <h5 class="title-left">
@@ -482,8 +502,10 @@
                     </div>
                     <div class="socials">
                       <ul>
-                        <li><a href="https://github.com/YJouille" target="_blank"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-                        <li><a href="https://www.linkedin.com/in/yaminajouille/" target="_blank"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <li><a href="https://github.com/YJouille" target="_blank"><span class="ico-circle"><i
+                                class="bi bi-github"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/yaminajouille/" target="_blank"><span
+                              class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
                       </ul>
                     </div>
                   </div>
@@ -503,7 +525,8 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; 2021 - Tous droits réservés - <a class="color-d" href="#">Mentions légales</a> </p>
+            <p class="copyright">&copy; 2021 - Tous droits réservés - <a class="color-d" href="#">Mentions légales</a>
+            </p>
             <div class="credits">
             </div>
           </div>
@@ -513,7 +536,9 @@
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -525,6 +550,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
 
 </body>
 

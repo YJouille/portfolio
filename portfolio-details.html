@@ -1,6 +1,8 @@
 
 
-<main id="main">
+<main id="mainprojet" class="projectdetails">
+
+
   <!-- ======= Portfolio Details Section ======= -->
   <section id="portfolio-details" class="portfolio-details">
     <div class="container">
@@ -55,3 +57,10 @@
 </main>
 <!-- End #main -->
 
+<script>
+  let closer = document.getElementById('closeDiv')
+  closer.addEventListener("click",function() {
+    alert("toto")
+    document.getElementById('mainprojet').style.display="none"
+  })
+</script>
