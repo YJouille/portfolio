@@ -204,6 +204,76 @@
 
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
+      
+      <!----------------work1---------------------------------------------->
+      <div id="mainprojet" class="projectdetails">
+
+          <a id="closeDiv"><span class="bi bi-x-circle"></span></a>
+
+        <script>
+          let closer = document.getElementById('closeDiv')
+          closer.addEventListener("click", function () {
+            document.getElementById('mainprojet').style.display = "none"
+          })
+        </script>
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-8">
+                <div class="portfolio-details-slider-my swiper-container">
+                  <div class="align-items-center">
+                    <img src="assets/img/work-1.png" alt="" />
+                  </div>
+
+                  <div class="portfolio-description">
+                    <p>
+                       Réalisation d'un sélecteur aléatoire d'apprenants parmi un liste. Au chargement de la page, les résultats sont conservés en utilisant le local storage.
+                       Ce projet utilise javascript et Bootstrap.
+                    </p>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="portfolio-info">
+                  <h3>Informations projet</h3>
+                  <ul>
+                    <li><strong>Catégorie</strong>: Front-end</li>
+                    <li><strong>Date</strong>: Septembre 2021</li>
+                    <li>
+                      <strong>URL projet</strong>:
+                      <a href="https://yaminaj.promo-93.codeur.online/selecteur-apprenant/" target="_blank" >https://yaminaj.promo-93.codeur.online/selecteur-apprenant/</a>
+                    </li>
+                    <li><strong>Compétences</strong>: javascript, HTML, CSS, Bootstrap, Git </li>
+                  </ul>
+                </div>
+
+                <div class="portfolio-description">
+                <h2>Tâches effectuées</h2>
+                <ul>
+                  <li>Realisation du wireframe</li>
+                  <li>Développement des fonctionnalité</li>
+                  <li>Ajout d'animations</li>
+                  <li>Gestion du projet avec Git</li>
+                </ul>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Portfolio Details Section -->
+      </div>
+      <!-- End #main -->
+
+      <!----------------fin work-->
+      <!-------------work2-->
+      <!-- https://yaminaj.promo-93.codeur.online/Le-credit-ledonien/ -->
+
+      <!------------------------------------------------------------------->
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -219,7 +289,6 @@
           </div>
         </div>
 
-        <div w3-include-html="portfolio-details.html"></div>
 
         <div class="row wrapper">
           <div class="col-md-4">
@@ -240,55 +309,11 @@
                   </div>
                   <div class="col-sm-2">
                     <div class="w-like">
-                      <!-- essaie -->
-                      <script>
-                        function includeHTML() {
-                          var z, i, elmnt, file, xhttp;
-                          /*loop through a collection of all HTML elements:*/
-                          z = document.getElementsByTagName("*");
-                          for (i = 0; i < z.length; i++) {
-                            elmnt = z[i];
-                            /*search for elements with a certain atrribute:*/
-                            file = elmnt.getAttribute("w3-include-html");
-                            if (file) {
-                              /*make an HTTP request using the attribute value as the file name:*/
-                              xhttp = new XMLHttpRequest();
-                              xhttp.onreadystatechange = function () {
-                                if (this.readyState == 4) {
-                                  if (this.status == 200) {
-                                    elmnt.innerHTML = '<div id="closeDiv">fermer</div>' + this.responseText;
-                                    let closer = document.getElementById('closeDiv')
-                                    closer.addEventListener("click", function () {
-                                      document.getElementById('mainprojet').style.display = "none"
-                                      document.getElementById('closeDiv').style.display = "none"
-
-                                    });
-                                    document.getElementById('lien').addEventListener("click", function () {
-                                      document.getElementById('mainprojet').style.display = "block"
-                                      document.getElementById('closeDiv').style.display = "block"
-                                    });
-                                  }
-                                  if (this.status == 404) {
-                                    elmnt.innerHTML = "Page not found.";
-                                  }
-                                  /*remove the attribute, and call this function once more:*/
-                                  elmnt.removeAttribute("w3-include-html");
-                                  includeHTML();
-                                }
-                              }
-                              xhttp.open("GET", file, true);
-                              xhttp.send();
-                              /*exit the function:*/
-                              return;
-                            }
-                          }
-                        };
-                      </script>
-
                       <a id="lien" href="#work"> <span class="bi bi-plus-circle"></span></a>
                       <script>
                         document.getElementById('lien').addEventListener('click', function () {
-                          includeHTML();
+                          document.getElementById('mainprojet').style.display = "block"
+                          document.getElementById('closeDiv').style.display = "block"
                         });
                       </script>
                     </div>
@@ -297,6 +322,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="work-box">
               <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
@@ -518,6 +544,8 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+
+
 
   <!-- ======= Footer ======= -->
   <footer>
