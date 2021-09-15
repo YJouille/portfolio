@@ -39,6 +39,7 @@
           <li><a class="nav-link scrollto" href="#about">Profil</a></li>
           <li><a class="nav-link scrollto" href="#services">Compétences</a></li>
           <li><a class="nav-link scrollto " href="#work">Projets</a></li>
+          <li><a class="nav-link scrollto " href="assets/CV_Yamina_JOUILLE.pdf" target="_blank" data-title="titre">CV</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -113,7 +114,7 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
+    <!-- ======= Skills Section ======= -->
     <section id="services" class="services-mf pt-5 route">
       <div class="container">
         <div class="row">
@@ -123,7 +124,7 @@
                 Compétences
               </h3>
               <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. -->
               </p>
               <div class="line-mf"></div>
             </div>
@@ -133,20 +134,20 @@
           <div class="col-md-3">
             <div class="service-box">
               <div class="service-ico">
-                <i class="bi bi-github"></i>
-                <i class="bi bi-github"></i>
-                <i class="bi bi-github"></i>
-                <i class="bi bi-github"></i>
-                <i class="bi bi-github"></i>
-
-                <!-- <span class="ico-circle"><i class="bi bi-github"></i></span> -->
+                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
               </div>
+
+              <!-- <i><img class="skills-ico" src="assets/img/icons/javascript.svg"></i>
+              <i><img class="skills-ico" src="assets/img/icons/vueJS.svg"></i>
+              <i><img class="skills-ico" src="assets/img/icons/html5.svg"></i>
+              <i><img class="skills-ico" src="assets/img/icons/css-3.svg"></i>
+              <i><img class="skills-ico" src="assets/img/icons/bootstrap.svg"></i>
+              <i><img class="skills-ico" src="assets/img/icons/git.svg"></i>
+              <i><img class="skills-ico" src="assets/img/icons/github.svg"></i> -->
               <div class="service-content">
-                <h2 class="s-title">Développement Web Front-end </h2>
+                <h2 class="s-title">Développement Web front-end </h2>
                 <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
+                  Je réalise des interfaces utilisateur web adaptables et dynamiques. J'utilise les langages HTML5, CSS3 et javascript. Je maîtrise également le framework Bootstrap.
                 </p>
               </div>
             </div>
@@ -154,15 +155,18 @@
           <div class="col-md-3">
             <div class="service-box">
               <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-
+                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
               </div>
+              <!-- <i><img class="skills-ico" src="assets/img/icons/php.svg"></i>
+              <i><img class="skills-ico" src="assets/img/icons/Laravel.svg"></i>
+              <i><img class="skills-ico" src="assets/img/icons/MySQL.svg"></i>
+              <i><img class="skills-ico" src="assets/img/icons/wordpress.svg"></i> -->
+              
+              
               <div class="service-content">
                 <h2 class="s-title">Développement Web back-end</h2>
                 <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
+                 Je réalise les traitements côté serveur d'un application web ou web mobile en interaction avec la partie back-end.
                 </p>
               </div>
             </div>
@@ -175,9 +179,7 @@
               <div class="service-content">
                 <h2 class="s-title">Web Design</h2>
                 <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
+                 Je réalise des visuels et maquettes en prenant en compte une charte graphique. J'utilise pour ça Figma.
                 </p>
               </div>
             </div>
@@ -190,9 +192,7 @@
               <div class="service-content">
                 <h2 class="s-title">Responsive Design</h2>
                 <p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
+                  J'utilise mes compétences pour réaliser des sites responsives s'adaptant ainsi aux supports de différentes tailles.
                 </p>
               </div>
             </div>
@@ -205,15 +205,15 @@
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
       
-      <!----------------work1---------------------------------------------->
-      <div id="mainprojet" class="projectdetails">
-
-          <a id="closeDiv"><span class="bi bi-x-circle"></span></a>
+      <!-------------détails projet1-->
+      <div id="mainprojet1" class="projectdetails">
+      
+       <a id="closeDiv1"><span class="bi bi-x-circle"></span></a>
 
         <script>
-          let closer = document.getElementById('closeDiv')
+          let closer = document.getElementById('closeDiv1')
           closer.addEventListener("click", function () {
-            document.getElementById('mainprojet').style.display = "none"
+            document.getElementById('mainprojet1').style.display = "none"
           })
         </script>
 
@@ -255,7 +255,7 @@
                 <h2>Tâches effectuées</h2>
                 <ul>
                   <li>Realisation du wireframe</li>
-                  <li>Développement des fonctionnalité</li>
+                  <li>Développement des fonctionnalités</li>
                   <li>Ajout d'animations</li>
                   <li>Gestion du projet avec Git</li>
                 </ul>
@@ -264,16 +264,138 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- End Portfolio Details Section -->
+        </section> 
       </div>
-      <!-- End #main -->
+      <!-- Fin détails projet 1-->
 
-      <!----------------fin work-->
-      <!-------------work2-->
-      <!-- https://yaminaj.promo-93.codeur.online/Le-credit-ledonien/ -->
+      <!--détails projet 2-->
+      <div id="mainprojet2" class="projectdetails">
 
-      <!------------------------------------------------------------------->
+        <a id="closeDiv2"><span class="bi bi-x-circle"></span></a>
+
+      <script>
+        let closer2 = document.getElementById('closeDiv2')
+        closer2.addEventListener("click", function () {
+          document.getElementById('mainprojet2').style.display = "none"
+        })
+      </script>
+
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider-my swiper-container">
+                <div class="align-items-center">
+                  <img src="assets/img/work-2-mookup.png" alt="" />
+                </div>
+
+                <div class="portfolio-description">
+                  <p>
+                    Integration d'une maquette sans framework
+                  </p>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Informations projet</h3>
+                <ul>
+                  <li><strong>Catégorie</strong>: Front-end</li>
+                  <li><strong>Date</strong>: Septembre 2021</li>
+                  <li>
+                    <strong>URL projet</strong>:
+                    <a href="https://yaminaj.promo-93.codeur.online/Le-credit-ledonien/" target="_blank" >https://yaminaj.promo-93.codeur.online/Le-credit-ledonien/</a>
+                  </li>
+                  <li><strong>Compétences</strong>: javascript, HTML, CSS, Git </li>
+                </ul>
+              </div>
+
+              <div class="portfolio-description">
+              <h2>Tâches effectuées</h2>
+              <ul>
+                <li>Realisation du wireframe</li>
+                <li>Développement des fonctionnalités</li>
+                <li>Ajout d'animations</li>
+                <li>Gestion du projet avec Git</li>
+              </ul>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </section> 
+    </div>
+
+      <!--fin détails projet 2-->
+
+      <!--détails projet 3-->
+      <div id="mainprojet3" class="projectdetails">
+
+        <a id="closeDiv3"><span class="bi bi-x-circle"></span></a>
+
+      <script>
+        let closer3 = document.getElementById('closeDiv3')
+        closer3.addEventListener("click", function () {
+          document.getElementById('mainprojet3').style.display = "none"
+        })
+      </script>
+
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider-my swiper-container">
+                <div class="align-items-center">
+                  <img src="assets/img/work-3.png" alt="" />
+                </div>
+
+                <div class="portfolio-description">
+                  <p>
+                    Integration d'une maquette sans framework
+                  </p>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Informations projet</h3>
+                <ul>
+                  <li><strong>Catégorie</strong>: Front-end</li>
+                  <li><strong>Date</strong>: Septembre 2021</li>
+                  <li>
+                    <strong>URL projet</strong>:
+                    <a href="https://yaminaj.promo-93.codeur.online/la-tour-de-pize/" target="_blank" >https://yaminaj.promo-93.codeur.online/la-tour-de-pize/</a>
+                  </li>
+                  <li><strong>Compétences</strong>: javascript, HTML, CSS, Bootstrap, Git </li>
+                </ul>
+              </div>
+
+              <div class="portfolio-description">
+              <h2>Tâches effectuées</h2>
+              <ul>
+                <li>Realisation du wireframe</li>
+                <li>Développement des fonctionnalités</li>
+                <li>Ajout d'animations</li>
+                <li>Gestion du projet avec Git</li>
+              </ul>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </section> 
+    </div>
+
+      <!--fin détails projet 3-->
+      
+
+      <!----------------------Galerie des projets------------------------------->
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -309,11 +431,11 @@
                   </div>
                   <div class="col-sm-2">
                     <div class="w-like">
-                      <a id="lien" href="#work"> <span class="bi bi-plus-circle"></span></a>
+                      <a id="lien1" href="#work"> <span class="bi bi-plus-circle"></span></a>
                       <script>
-                        document.getElementById('lien').addEventListener('click', function () {
-                          document.getElementById('mainprojet').style.display = "block"
-                          document.getElementById('closeDiv').style.display = "block"
+                        document.getElementById('lien1').addEventListener('click', function () {
+                          document.getElementById('mainprojet1').style.display = "block"
+                          document.getElementById('closeDiv1').style.display = "block"
                         });
                       </script>
                     </div>
@@ -325,22 +447,29 @@
 
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/work-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+                  <img src="assets/img/work-2.png" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <h2 class="w-title">Le crédit lédonien</h2>
+                    <p class="lead">Projet réalisé en javascript, html, css</p>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Front-end</span> / <span class="w-date">Sep. 2021</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      <a id="lien2" href="#work"> <span class="bi bi-plus-circle"></span></a>
+                      <script>
+                        document.getElementById('lien2').addEventListener('click', function () {
+                          document.getElementById('mainprojet2').style.display = "block"
+                          document.getElementById('closeDiv2').style.display = "block"
+                        });
+                      </script>
                     </div>
                   </div>
                 </div>
@@ -349,104 +478,45 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/work-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                  <img src="assets/img/work-3.png" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <h2 class="w-title">La Tour de Pize</h2>
+                    <p class="lead">Projet réalisé en javascript, html, css, Bootstrap</p>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Front-end</span> / <span class="w-date">Août 2021</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      <a id="lien3" href="#work"> <span class="bi bi-plus-circle"></span></a>
+                      <script>
+                        document.getElementById('lien3').addEventListener('click', function () {
+                          document.getElementById('mainprojet3').style.display = "block"
+                          document.getElementById('closeDiv3').style.display = "block"
+                        });
+                      </script>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
+          
+         
 
         </div>
       </div>
     </section><!-- End Portfolio Section -->
+
+
+
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
