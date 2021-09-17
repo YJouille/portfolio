@@ -25,9 +25,10 @@ a {
 }
 
 a:hover {
-  /* color: #d0826f; */ /*ligne décommentée pour lien mentions légales*/
+  /* color: #d0826f; */
+  /*ligne décommentée pour lien mentions légales*/
   /* color: #f5f5f5; */
-  color : #263547;
+  color: #263547;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -50,11 +51,16 @@ a:hover {
   color: #4e4e4e;
 }
 
-.box-shadow, .paralax-mf, .service-box, .work-box, .card-blog {
+.box-shadow,
+.paralax-mf,
+.service-box,
+.work-box,
+.card-blog {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
-.box-shadow-a, .button:hover {
+.box-shadow-a,
+.button:hover {
   text-decoration: none;
   box-shadow: 0 0 0 4px #f5dad3;
 }
@@ -235,7 +241,13 @@ a:hover {
 }
 
 /*------/ Ul resect /------*/
-.ul-resect, .socials ul, .list-ico, .blog-wrapper .post-meta ul, .box-comments .list-comments, .widget-sidebar .list-sidebar, .widget-tags ul {
+.ul-resect,
+.socials ul,
+.list-ico,
+.blog-wrapper .post-meta ul,
+.box-comments .list-comments,
+.widget-sidebar .list-sidebar,
+.widget-tags ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
@@ -263,12 +275,7 @@ a:hover {
   display: block;
 }
 
-.skills-ico{
-  height: 50px;
-  width: 50px;
-  font-size: 2rem;
-  margin: 0 auto;
-}
+
 
 /*--/ Scrolltop s /--*/
 /* .scrolltop-mf {
@@ -358,6 +365,7 @@ a:hover {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -367,6 +375,7 @@ a:hover {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -473,12 +482,13 @@ a:hover {
   position: relative;
 }
 
-.navbar > ul > li {
+.navbar>ul>li {
   white-space: nowrap;
   padding: 10px 0 10px 30px;
 }
 
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -493,13 +503,14 @@ a:hover {
   text-transform: uppercase;
 }
 
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
-.navbar > ul > li > a:before {
+.navbar>ul>li>a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -512,12 +523,17 @@ a:hover {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
   visibility: visible;
   width: 80%;
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
   color: #fff;
 }
 
@@ -537,6 +553,7 @@ a:hover {
   .mobile-nav-toggle {
     display: block;
   }
+
   .navbar ul {
     display: none;
   }
@@ -573,11 +590,13 @@ a:hover {
   transition: 0.3s;
 }
 
-.navbar-mobile > ul > li {
+.navbar-mobile>ul>li {
   padding: 0;
 }
 
-.navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover>a:before,
+.navbar-mobile .active:before {
   visibility: hidden;
 }
 
@@ -587,7 +606,9 @@ a:hover {
   color: #4e4e4e;
 }
 
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
   color: #d0826f;
 }
 
@@ -725,18 +746,38 @@ a:hover {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.service-ico {
+  height: 25%;
+}
+
+.service-content {
+  height: 50%;
+}
+
+.skills-ico {
+  height: 25%;
+}
+
+.skills-ico img {
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
 .service-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
   text-align: center;
+  height: 100%;
 }
 
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color:#d19a8c;
+  background-color: #d19a8c;
   box-shadow: 0 0 0 10px #f5dad3;
 }
 
@@ -757,9 +798,9 @@ a:hover {
   font-size: 40px;
 }
 
-.icone{
-width: 40px;
-height: 40px;
+.icone {
+  width: 40px;
+  height: 40px;
 }
 
 .service-box .s-title {
@@ -779,11 +820,11 @@ height: 40px;
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-#work{
+#work {
   position: relative;
 }
 
-.projectdetails{
+.projectdetails {
   position: fixed;
   display: none;
   top: 66px;
@@ -795,20 +836,23 @@ height: 40px;
   height: 100%;
   transition: 0.8s;
 }
-#closeDiv1{
+
+#closeDiv1 {
   z-index: 10;
   font-size: 2.5rem;
   color: #d0826f;
   float: right;
   margin-right: 10px;
 }
-#closeDiv2{
+
+#closeDiv2 {
   z-index: 10;
   font-size: 2.5rem;
   color: #d0826f;
   float: right;
 }
-#closeDiv3{
+
+#closeDiv3 {
   z-index: 10;
   font-size: 2.5rem;
   color: #d0826f;
@@ -816,6 +860,7 @@ height: 40px;
 }
 
 .work-box {
+  height: 100%;
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -913,7 +958,7 @@ height: 40px;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -967,6 +1012,15 @@ height: 40px;
   font-weight: 600;
 }
 
+/* .php-email-form #sent {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+} */
+
 .php-email-form .loading {
   display: none;
   background: #fff;
@@ -987,15 +1041,17 @@ height: 40px;
   animation: animate-loading 1s linear infinite;
 }
 
-.php-email-form input, .php-email-form textarea {
+.php-email-form input,
+.php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.php-email-form input:focus, .php-email-form textarea:focus {
+.php-email-form input:focus,
+.php-email-form textarea:focus {
   /* border-color: #dfe0e0; */
-  border-color:#3b4358;
+  border-color: #3b4358;
 }
 
 .php-email-form input {
@@ -1023,6 +1079,7 @@ height: 40px;
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1032,6 +1089,7 @@ height: 40px;
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

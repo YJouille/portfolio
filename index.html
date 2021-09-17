@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -143,13 +143,15 @@
                   et javascript. Je maîtrise également le framework Bootstrap.
                 </p>
               </div>
-                <i><img class="skills-ico" src="assets/img/icons/javascript.svg"></i>
-                <i><img class="skills-ico" src="assets/img/icons/vueJS.svg"></i>
-                <i><img class="skills-ico" src="assets/img/icons/html5.svg"></i>
-                <i><img class="skills-ico" src="assets/img/icons/css-3.svg"></i>
-                <i><img class="skills-ico" src="assets/img/icons/bootstrap.svg"></i>
-                <i><img class="skills-ico" src="assets/img/icons/git.svg"></i>
-                <i><img class="skills-ico" src="assets/img/icons/github.svg"></i>
+              <div class="skills-ico">
+                <i><img src="assets/img/icons/javascript.svg" alt="icone javascript"></i>
+                <i><img src="assets/img/icons/vueJS.svg" alt="icone vueJS"></i>
+                <i><img src="assets/img/icons/html5.svg" alt="icone html5"></i>
+                <i><img src="assets/img/icons/css-3.svg" alt="icone css3"></i>
+                <i><img src="assets/img/icons/bootstrap.svg" alt="icone bootstrap"></i>
+                <i><img src="assets/img/icons/git.svg" alt="icone git"></i>
+                <i><img src="assets/img/icons/github.svg" alt="icone github "></i>
+              </div>
             </div>
           </div>
           <div class="col-md-3">
@@ -164,11 +166,11 @@
                   partie back-end.
                 </p>
               </div>
-              <div>
-                <i><img class="skills-ico" src="assets/img/icons/php.svg"></i>
-              <i><img class="skills-ico" src="assets/img/icons/Laravel.svg"></i>
-              <i><img class="skills-ico" src="assets/img/icons/MySQL.svg"></i>
-              <i><img class="skills-ico" src="assets/img/icons/wordpress.svg"></i>
+              <div class="skills-ico">
+                <i><img src="assets/img/icons/php.svg" alt="icone php"></i>
+                <i><img src="assets/img/icons/Laravel.svg" alt="icone laravel"></i>
+                <i><img src="assets/img/icons/MySQL.svg" alt="icone mysql"></i>
+                <i><img src="assets/img/icons/wordpress.svg" alt="icone wordpress"></i>
               </div>
             </div>
           </div>
@@ -189,7 +191,8 @@
           <div class="col-md-3">
             <div class="service-box">
               <div class="service-ico">
-                <span class="ico-circle"><img class="icone" src="assets/img/icons/responsive.svg"></span>
+                <span class="ico-circle"><img class="icone" src="assets/img/icons/responsive.svg"
+                    alt="icone responsive"></span>
                 <!-- <span class="ico-circle"><i class="bi bi-binoculars"></i></span> -->
               </div>
               <div class="service-content">
@@ -209,7 +212,8 @@
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
 
-      <!-------------détails projet1-->
+      <!-- détails projet1 -->
+      <!-- voir l'utilité de l'id suivant-->
       <div id="mainprojet1" class="projectdetails">
 
         <a id="closeDiv1"><span class="bi bi-x-circle"></span></a>
@@ -218,17 +222,18 @@
           let closer = document.getElementById('closeDiv1')
           closer.addEventListener("click", function () {
             document.getElementById('mainprojet1').style.display = "none"
+            document.body.style.overflowY ="scroll";
           })
         </script>
 
         <!-- ======= Portfolio Details Section ======= -->
-        <section id="portfolio-details" class="portfolio-details">
+        <section id="portfolio-details1" class="portfolio-details">
           <div class="container">
             <div class="row gy-4">
               <div class="col-lg-8">
                 <div class="portfolio-details-slider-my swiper-container">
                   <div class="align-items-center">
-                    <img src="assets/img/work-1.png" alt="" />
+                    <img src="assets/img/work-1.png" alt="projet1" />
                   </div>
 
                   <div class="portfolio-description">
@@ -274,7 +279,7 @@
       </div>
       <!-- Fin détails projet 1-->
 
-      <!--détails projet 2-->
+      <!-- détails projet 2 -->
       <div id="mainprojet2" class="projectdetails">
 
         <a id="closeDiv2"><span class="bi bi-x-circle"></span></a>
@@ -287,13 +292,13 @@
         </script>
 
         <!-- ======= Portfolio Details Section ======= -->
-        <section id="portfolio-details" class="portfolio-details">
+        <section id="portfolio-details2" class="portfolio-details">
           <div class="container">
             <div class="row gy-4">
               <div class="col-lg-8">
                 <div class="portfolio-details-slider-my swiper-container">
                   <div class="align-items-center">
-                    <img src="assets/img/work-2-mookup.png" alt="" />
+                    <img src="assets/img/work-2-mookup.png" alt="projet2" />
                   </div>
 
                   <div class="portfolio-description">
@@ -336,9 +341,9 @@
         </section>
       </div>
 
-      <!--fin détails projet 2-->
+      <!-- fin détails projet 2 -->
 
-      <!--détails projet 3-->
+      <!-- détails projet 3 -->
       <div id="mainprojet3" class="projectdetails">
 
         <a id="closeDiv3"><span class="bi bi-x-circle"></span></a>
@@ -351,13 +356,13 @@
         </script>
 
         <!-- ======= Portfolio Details Section ======= -->
-        <section id="portfolio-details" class="portfolio-details">
+        <section id="portfolio-details3" class="portfolio-details">
           <div class="container">
             <div class="row gy-4">
               <div class="col-lg-8">
                 <div class="portfolio-details-slider-my swiper-container">
                   <div class="align-items-center">
-                    <img src="assets/img/work-3.png" alt="" />
+                    <img src="assets/img/work-3.png" alt="projet3" />
                   </div>
 
                   <div class="portfolio-description">
@@ -400,10 +405,10 @@
         </section>
       </div>
 
-      <!--fin détails projet 3-->
+      <!-- fin détails projet 3 -->
 
 
-      <!----------------------Galerie des projets------------------------------->
+      <!-- Galerie des projets -->
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -425,7 +430,7 @@
             <div class="work-box">
               <a href="assets/img/work-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-1.png" alt="" class="img-fluid">
+                  <img src="assets/img/work-1.png" alt="projet1" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -444,6 +449,7 @@
                         document.getElementById('lien1').addEventListener('click', function () {
                           document.getElementById('mainprojet1').style.display = "block"
                           document.getElementById('closeDiv1').style.display = "block"
+                          document.body.style.overflowY ="hidden";
                         });
                       </script>
                     </div>
@@ -457,7 +463,7 @@
             <div class="work-box">
               <a href="assets/img/work-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-2.png" alt="" class="img-fluid">
+                  <img src="assets/img/work-2.png" alt="projet2" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -488,7 +494,7 @@
             <div class="work-box">
               <a href="assets/img/work-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-3.png" alt="" class="img-fluid">
+                  <img src="assets/img/work-3.png" alt="projet3" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -534,7 +540,9 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
+              <!-- <div id="contact" class="box-shadow-full"> -->
+              <div class="box-shadow-full">
+                <!--pour supprimer la duplication de l'id-->
                 <div class="row">
                   <div class="col-md-6">
                     <div class="title-box-2">
@@ -543,7 +551,7 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form action="forms/contact.php" method="post" class="php-email-form">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -572,11 +580,13 @@
                           <div class="col-md-12 text-center my-3">
                             <div class="loading">Chargement</div>
                             <div class="error-message"></div>
-                            <div class="sent-message">Votre message a été envoyé. Merci!</div>
+                            <div id="sent" class="sent-message">Votre message a été envoyé. Merci!</div>
                           </div>
                           <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Envoyer
+                            <button type="submit" class="button button-a button-big button-rouded"
+                              name="envoyer">Envoyer
                               message</button>
+
                           </div>
                         </div>
                       </form>
